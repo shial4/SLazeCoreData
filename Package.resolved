@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SLazeKit",
+        "repositoryURL": "https://github.com/shial4/SLazeKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d7edbee9976e47e47e70db10dae8b5e5a44c6a9f",
+          "version": "0.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
