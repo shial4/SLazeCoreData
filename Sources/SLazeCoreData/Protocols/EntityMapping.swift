@@ -15,16 +15,6 @@ public protocol EntityMapping {
 }
 
 extension EntityMapping {
-    public static func synchronize(_ obj: Any, context: NSManagedObjectContext) throws {
-        if let array = obj as? [EntityMapping] {
-            array.forEach({_ = try? $0.map(context)})
-        } else {
-            guard let mapper = obj as? EntityMapping else { return }
-            _ = try mapper.map(context)
-        }
-        context.commit()
-    }
-    
     func map(_ context: NSManagedObjectContext) throws -> NSManagedObject? {
         var model: NSManagedObject? = nil
         var mapError: Error?
@@ -69,6 +59,16 @@ extension Array where Element: EntityMapping {
     public func serialized<T: NSManagedObject>(_ context: NSManagedObjectContext?) throws -> [T] {
         return try compactMap({ try $0.serialized(context) })
     }
+}
+
+public func synchronize(_ obj: Any, context: NSManagedObjectContext) throws {
+    if let array = obj as? [EntityMapping] {
+        array.forEach({_ = try? $0.map(context)})
+    } else {
+        guard let mapper = obj as? EntityMapping else { return }
+        _ = try mapper.map(context)
+    }
+    context.commit()
 }
 
 

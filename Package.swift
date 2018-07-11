@@ -12,7 +12,6 @@ let package = Package(
             targets: ["SLazeCoreData"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/shial4/SLazeKit.git", from: "0.2.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -20,8 +19,5 @@ let package = Package(
         .target(
             name: "SLazeCoreData",
             dependencies: []),
-        .testTarget(
-            name: "SLazeCoreDataTests",
-            dependencies: ["SLazeCoreData, SLazeKit"]),
     ]
 )
