@@ -18,7 +18,7 @@
         </a>
 </p>
 
-CoreData serializer extension for [Object.swift](https://github.com/shial4/SLazeKit.git)
+CoreData serializer extension for [SLazeKit](https://github.com/shial4/SLazeKit.git)
 
 **Models example**
 [Object.swift](Tests/SLazeCoreDataTests/Models/Object.swift)
