@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SLazeCoreData'
-  s.version      = '0.1.0'
+  s.version      = '0.1.2'
   s.summary      = 'Swift LazyKit CoreData serializer.'
   s.description  = <<-DESC
     CoreData serializer extension for SLazeKit

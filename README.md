@@ -2,7 +2,7 @@
 
 <p align="center">
     <a href="http://swift.org">
-        <img src="https://img.shields.io/badge/Swift-4.0-brightgreen.svg" alt="Language" />
+        <img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Language" />
         </a>
         <a href="https://raw.githubusercontent.com/shial4/SLazeCoreData/master/LICENSE">
             <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" />
@@ -41,7 +41,7 @@ Clone the repo and drag the folder `SLazeCoreData` into your Xcode project.
 
 **Swift Package Manager:**
 
-Add the line `.package(url: "https://github.com/shial4/SLazeCoreData.git", from: "0.1.0"),` to your `Package.swift`
+Add the line `.package(url: "https://github.com/shial4/SLazeCoreData.git", from: "0.1.2"),` to your `Package.swift`
 
 **Swift Package Manager in your iOS Project:**
 This project demonstrates a working method for using Swift Package Manager (SPM) to manage the dependencies of an iOS project.
