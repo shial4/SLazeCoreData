@@ -63,7 +63,7 @@ extension Array where Element: EntityMapping {
 
 public func synchronize(_ obj: Any, context: NSManagedObjectContext) throws {
     if let array = obj as? [EntityMapping] {
-        array.forEach({_ = try? $0.map(context)})
+        array.forEach({_ = ((try? $0.map(context)) as NSManagedObject??)})
     } else {
         guard let mapper = obj as? EntityMapping else { return }
         _ = try mapper.map(context)
